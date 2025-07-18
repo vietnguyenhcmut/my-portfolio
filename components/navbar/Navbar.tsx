@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <Button
             onClick={() =>
-              window.open("https://github.com/vietnguyenhcmut/my-porfolio")
+              window.open("https://github.com/vietnguyenhcmut/my-portfolio")
             }
             className="flex flex-row items-center gap-2"
           >
