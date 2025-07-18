@@ -67,6 +67,7 @@ export default function Education() {
             </motion.h4>
             {education.brief.map((brief) => (
               <motion.h4
+                key={brief}
                 className="text-md md:text-md mb-1 text-muted-foreground"
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}

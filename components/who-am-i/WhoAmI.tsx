@@ -58,6 +58,7 @@ export default function WhoAmI() {
             <p>&#128161;</p>
             {contentOfApp.portfolio.lifeMotto.map((motto) => (
               <motion.h4
+                key={motto}
                 className="text-md md:text-md mb-2 text-muted-foreground"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

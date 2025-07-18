@@ -55,17 +55,20 @@ export default function About() {
           </h3>
           <p className="text-muted-foreground mb-4">
             I'm a passionate web developer with a keen eye for design, user
-            experience, and security for user actions. I have 2 years of web
-            development experience, using ReactJS to create web applications. I
-            have been using libraries such as TailwindCSS, Ant Design, MUI, and
-            Redux.
+            experience, and security for user actions. I have many years of web
+            development experience, using ReactJS to handle affordable web
+            applications. I also have an overview of AWS, and apply CI/CD
+            automation to impletement the wonderful web applications with
+            cost-optimized, integrate services for variety customer's purposes.
+            I always trust that spending more times to solve hard problem make
+            us excellent.
           </p>
-          <p className="text-muted-foreground mb-6">
+          {/* <p className="text-muted-foreground mb-6">
             I also have overview knowledge about AWS, and apply CI/CD automation
             to deploy a web application to AWS Amplify, integrated with Lambda,
             DynamoDB, and Cognito. Besides, I also tried to use the WIX platform
             to create many websites using VeloJS for basic purposes.
-          </p>
+          </p> */}
 
           <div className="grid grid-cols-2 gap-4">
             <div>

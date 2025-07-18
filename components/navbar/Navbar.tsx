@@ -73,7 +73,7 @@ export default function Navbar() {
             {" "}
             <a
               download
-              href="/CV_NguyenVanViet_LT.pdf"
+              href="/CV_NguyenVanViet_Canv.pdf"
               className="flex flex-row items-center gap-2"
             >
               <FaDownload /> Download My CV

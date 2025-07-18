@@ -41,7 +41,7 @@ export default function Career() {
             style={{ width: "800px" }}
           >
             <motion.h4
-              className="text-xl md:text-xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-500"
+              className={`text-xl md:text-xl font-bold mb-1 bg-clip-text text-transparent ${career.companyGradientColor}`}
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.5 }}
@@ -98,7 +98,10 @@ export default function Career() {
             ))}
             <div className="mt-2 flex flex-row gap-2 flex-wrap">
               {career.skills.map((skill, index) => (
-                <Badge className="bg-slate-100 text-slate-500 border border-slate-200">
+                <Badge
+                  key={index}
+                  className="bg-slate-100 text-slate-500 border border-slate-200"
+                >
                   {skill}
                 </Badge>
               ))}

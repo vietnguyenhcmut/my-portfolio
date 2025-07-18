@@ -2,37 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-export type SkillsProps = {
-  type: string;
-  list: string[];
-};
-
-const skills: SkillsProps[] = [
-  {
-    type: "Programming Languages",
-    list: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Typescript",
-      "C/C++",
-      "Python",
-      "Golang",
-    ],
-  },
-  {
-    type: "Framework",
-    list: ["ReactJS NextJS", "React Native", "VeloJS", "NestJS"],
-  },
-  { type: "Cloud Computing", list: ["AWS"] },
-  { type: "Database", list: ["DynamoDB", "PostgreSQL", "S3"] },
-  {
-    type: "Operating System",
-    list: ["Windows", "MacOS", "Linux (Ubuntu, Yocto)"],
-  },
-  { type: "English", list: ["TOEIC L&R 610, S&W 205 - 08/2023"] },
-];
+import { contentOfApp } from "@/content";
 
 export default function Skills() {
   const ref = useRef(null);
@@ -41,7 +11,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 px-4 md:px-8 max-w-6xl mx-auto bg-muted/30"
+      className="py-20 px-4 md:px-8 max-w-6xl mx-auto bg-muted/30 rounded-2xl"
     >
       <div className="text-center mb-12">
         <motion.h2
@@ -62,7 +32,7 @@ export default function Skills() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        {skills.map((skill, index) => (
+        {contentOfApp.portfolio.skills.map((skill, index) => (
           <motion.div
             key={skill.type}
             initial={{ opacity: 0, y: 20 }}

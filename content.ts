@@ -40,19 +40,64 @@ const portfolio: PortfolioProps = {
     },
     {
       type: "Framework",
-      list: ["ReactJS NextJS", "React Native", "VeloJS", "NestJS"],
+      list: [
+        "ReactJS NextJS",
+        "React Native",
+        "VeloJS",
+        "ExpressJS with Prisma",
+      ],
     },
+    {
+      type: "Libraries",
+      list: ["TailwindCSS", "shadcn/ui", "Ant Design", "MUI"],
+    },
+    { type: "Containerization", list: ["Docker"] },
     { type: "Cloud Computing", list: ["AWS"] },
     { type: "Database", list: ["DynamoDB", "PostgreSQL", "S3"] },
     {
-      type: "Operating System",
-      list: ["Windows", "MacOS", "Linux (Ubuntu, Yocto)"],
+      type: "Powered platform:",
+      list: ["AWS Amplify", "Supabase", "Firebase"],
     },
-    { type: "English", list: ["TOEIC L&R 610, S&W 205 - 08/2023"] },
+    {
+      type: "English",
+      list: ["TOEIC - 610 L&R - 205 S&W (04/2023)", "VSTEP - B2 (04/2025)"],
+    },
   ],
   career: [
     {
+      company: "Vietnamese IoT Solution Company",
+      companyGradientColor: "bg-gradient-to-r from-green-600 to-lime-500",
+      logo: {
+        name: "/viis_logo.svg",
+        width: 150,
+        height: 150,
+      },
+      time: "Mar 2025 - Now",
+      industry: "Smart Agriculture",
+      role: [
+        {
+          title: "Contributor",
+          achievements: [
+            "Collected agricultural parameters from the farms (by the devices) to the web app solution.",
+            "Built the Task Assignments functionality, and templates for configuration.",
+            "Allowed user to control their agri-devices through RPC control method and received all changed actions through the MQTT protocol.",
+          ],
+        },
+      ],
+      skills: [
+        "ReactJS",
+        "Zustand",
+        "PostgreSQL",
+        "IoT",
+        "Security",
+        "VPN",
+        "TailwindCSS",
+        "+ More",
+      ],
+    },
+    {
       company: "Dai Quang Phat Co.,LTD",
+      companyGradientColor: "bg-gradient-to-r from-blue-500 to-orange-500",
       logo: {
         name: "/DaiQuangPhat.JPG",
         width: 150,
@@ -93,6 +138,7 @@ const portfolio: PortfolioProps = {
     },
     {
       company: "WorldBaseSys",
+      companyGradientColor: "bg-gradient-to-r from-gray-500 to-orange-400",
       logo: {
         name: "/wbs-logo-132x40.png",
         width: 99,
@@ -113,6 +159,7 @@ const portfolio: PortfolioProps = {
     },
     {
       company: "Bosch Global Software Technologies",
+      companyGradientColor: "bg-gradient-to-r from-red-500 to-blue-500",
       logo: {
         name: "/BGST.png",
         width: 200,
@@ -133,40 +180,40 @@ const portfolio: PortfolioProps = {
     },
   ],
   projects: [
-    {
-      name: "DQP Cloud",
-      description:
-        "A fully platform for enterprises monitors and controls devices remotely, and prevents incidents",
-      skills: [
-        "React",
-        "Tailwind CSS",
-        "Redux",
-        "AWS",
-        "NestJS",
-        "PostgreSQL",
-        "Kafka",
-        "Kubernetes",
-        "Jenkins",
-        "+ more",
-      ],
-      linkGithub: "",
-      linkDemo: "https://dqpcloud.com/",
-    },
-    {
-      name: "Note Di Pls",
-      description: "A publicly notation app for simple purposes",
-      skills: ["NextJS", "Tailwind CSS", "Redux", "NestJS"],
-      linkGithub: "https://github.com/vietnguyenhcmut/note-di-pls",
-      linkDemo: "I haven't deployed it yet",
-    },
-    {
-      name: "OnHand SmartHome",
-      description:
-        "An smarthome platform for family to control their smart home devices",
-      skills: ["NextJS", "Tailwind CSS", "Redux", "AWS"],
-      linkGithub: "https://github.com/vietnguyenhcmut/core-components-vietng",
-      linkDemo: "https://master.d3n3605u39aiut.amplifyapp.com/",
-    },
+    // {
+    //   name: "DQP Cloud",
+    //   description:
+    //     "A fully platform for enterprises monitors and controls devices remotely, and prevents incidents",
+    //   skills: [
+    //     "React",
+    //     "Tailwind CSS",
+    //     "Redux",
+    //     "AWS",
+    //     "NestJS",
+    //     "PostgreSQL",
+    //     "Kafka",
+    //     "Kubernetes",
+    //     "Jenkins",
+    //     "+ more",
+    //   ],
+    //   linkGithub: "",
+    //   linkDemo: "https://dqpcloud.com/",
+    // },
+    // {
+    //   name: "Note Di Pls",
+    //   description: "A publicly notation app for simple purposes",
+    //   skills: ["NextJS", "Tailwind CSS", "Redux", "NestJS"],
+    //   linkGithub: "https://github.com/vietnguyenhcmut/note-di-pls",
+    //   linkDemo: "I haven't deployed it yet",
+    // },
+    // {
+    //   name: "OnHand SmartHome",
+    //   description:
+    //     "An smarthome platform for family to control their smart home devices",
+    //   skills: ["NextJS", "Tailwind CSS", "Redux", "AWS"],
+    //   linkGithub: "https://github.com/vietnguyenhcmut/core-components-vietng",
+    //   linkDemo: "https://master.d3n3605u39aiut.amplifyapp.com/",
+    // },
   ],
 };
 

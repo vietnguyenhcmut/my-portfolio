@@ -20,6 +20,7 @@ export type PortfolioProps = {
   }[];
   career: {
     company: string;
+    companyGradientColor: string;
     logo: {
       name: string;
       height: number;
